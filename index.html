@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>APD Detector</title>
+
+    <meta name="viewport" content="width=640, user-scalable=no" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"
+        integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/async/3.2.0/async.min.js"
+        integrity="sha512-6K6+H87tLdCWvY5ml9ZQXLRlPlDEt8uXmtELhuJRgFyEDv6JvndWHg3jadJuBVGPEhhA2AAt+ROMC2V7EvTIWw=="
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/inferencejs"></script>
+
+    <link rel="stylesheet" href="./main.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="./main.js"></script>
+</head>
+
+<body class="filter">
+    <div class="loader">
+        <div class="spinner"></div>
+        <h2>Memuat Model</h2>
+        <p>Deteksi Alat Pelindung Diri</p>
+    </div>
+    <video id="video" autoplay muted playsinline></video>
+    <div class="toast">
+        <div class="title">
+            <i class="ri-checkbox-circle-fill"></i>
+            <p>Tidak Ada Pelanggaran</p>
+        </div>
+    </div>
+    <div class="missing-ppe">
+        <h3>PPE</h3>
+        <ul>
+            <li class="label_helmet">✅ Helmet</li>
+            <li class="label_glasses">✅ Glasses</li>
+            <li class="label_mask">✅ Mask</li>
+            <li class="label_vest">✅ Vest</li>
+            <li class="label_gloves">✅ Gloves</li>
+            <li class="label_boots">✅ Boots</li>
+        </ul>
+    </div>
+</body>
+
+</html>
