@@ -28,7 +28,7 @@ $(function () {
 
     const loadModelPromise = new Promise(function (resolve, reject) {
         inferEngine
-            .startWorker("ppe-kv3ng", "15", "rf_4xONXi3ndFSqsmdzaoFQ9ra7SyY2")
+            .startWorker("", "", "") // add you project_id, project_version, and Publishable API Key from Roboflow
             .then(function (id) {
                 workerId = id;
                 resolve();
